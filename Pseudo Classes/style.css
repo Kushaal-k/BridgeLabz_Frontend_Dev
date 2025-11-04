@@ -1,0 +1,78 @@
+.Parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.box1{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(227, 137, 73);
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px 0 rgb(96, 79, 79);
+    transition: all 3s ease;
+}
+.box2{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(212, 30, 30);
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px 0 rgb(96, 79, 79);
+    transition: all 3s ease;
+}
+.box3{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(19, 235, 152);
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px 0 rgb(96, 79, 79);
+    transition: all 3s ease;
+}
+.box4{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(225, 17, 176);
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px 0 rgb(96, 79, 79);
+    transition: all 3s ease;
+}
+.container:hover .box1{
+    background-color: rgb(202, 196, 255);
+    transition-duration: 3s;
+    border: 5px solid black;
+    border-radius: 10px;
+    /* transform: rotate(360deg); */
+    transform: translate(-100px, -100px) rotate(-90deg);
+}
+.container:hover .box2{
+    background-color: rgb(202, 196, 255);
+    transition-duration: 3s;
+    border: 5px solid black;
+    border-radius: 10px;
+    /* transform: rotate(360deg); */
+    transform: translate(100px, -100px) rotate(90deg);
+}
+.container:hover .box3{
+    background-color: rgb(202, 196, 255);
+    transition-duration: 3s;
+    border: 5px solid black;
+    border-radius: 10px;
+    transform: rotate(90deg);
+    transform: translate(-100px, 100px) rotate(-90deg);
+}
+.container:hover .box4{
+    background-color: rgb(202, 196, 255);
+    transition-duration: 3s;
+    transition: all 2 ease-out;
+    border: 5px solid black;
+    border-radius: 10px;
+    /* transform: rotate(360deg); */
+    transform: translate(100px, 100px) rotate(90deg);
+}

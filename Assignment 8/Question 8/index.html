@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Box-Sizing Comparison</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="wrap">
+        <h1>box-sizing: content-box vs border-box</h1>
+        <div class="comparison">
+            <figure class="box example1">
+                <figcaption>Default (content-box)</figcaption>
+                <div class="inner">Box content</div>
+            </figure>
+
+
+            <figure class="box example2">
+                <figcaption>box-sizing: border-box</figcaption>
+                <div class="inner">Box content</div>
+            </figure>
+        </div>
+
+
+        <article class="explain">
+            <p><strong>Explanation:</strong> When using the default <code>content-box</code>, padding and border are
+                added to the element's specified width. With <code>box-sizing: border-box;</code> the specified width
+                includes padding and border. Try resizing the window to see how the two boxes behave.</p>
+        </article>
+    </main>
+</body>
+
+</html>

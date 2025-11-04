@@ -1,0 +1,70 @@
+/* Element selector: style every paragraph */
+p {
+    color: #222;
+    margin: 0 0 0.6rem
+}
+
+
+/* Class selector: .highlight */
+.highlight {
+    background: #fff7cc;
+    padding: 0.4rem;
+    border-radius: 6px
+}
+
+
+/* ID selector: #unique (IDs are specific) */
+#unique {
+    font-weight: 600;
+    color: #0a66c2
+}
+
+
+/* Attribute selector: [data-type="external"] */
+a[data-type="external"] {
+    text-decoration: underline;
+    color: #2b7a78
+}
+
+
+/* Descendant selector: styles spans inside .wrap */
+.wrap span {
+    padding: 0.15rem 0.35rem;
+    border-radius: 4px
+}
+
+
+/* Child combinator: style only direct children (>) */
+.wrap>p {
+    background: #f7f9fc;
+    padding: 0.6rem;
+    border-radius: 6px
+}
+
+
+/* Adjacent sibling (+) — style element immediately after another */
+.adj span+.adj-sibling {
+    border: 1px dashed #ccc;
+    padding: 0.15rem 0.35rem
+}
+
+
+/* General sibling (~) — any following siblings */
+.s1~.s2 {
+    font-weight: 600;
+    color: #b33
+}
+
+
+/* Layout: basic spacing to keep the page neat */
+nmain {
+    padding: 1rem
+}
+
+header,
+footer {
+    padding: 0.6rem 1rem;
+    background: #fff;
+    border-radius: 6px;
+    margin-bottom: 0.8rem
+}

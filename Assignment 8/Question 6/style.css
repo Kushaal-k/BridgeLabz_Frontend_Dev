@@ -1,0 +1,32 @@
+*{box-sizing:border-box}
+html,body{height:100%;margin:0}
+body{display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,#fff 0%,#eef6ff 100%);font-family:Arial,Helvetica,sans-serif}
+.stage{display:flex;align-items:center;justify-content:center;padding:24px}
+.anim-card{display:flex;flex-direction:column;gap:20px;align-items:center;justify-content:center;padding:28px;border-radius:12px;box-shadow:0 10px 30px rgba(4,9,20,.06);background:#ffffff;width:min(720px,92vw)}
+
+
+.moving-box{width:80px;height:40px;background:#1366ff;border-radius:8px;animation:slideX 2.6s ease-in-out infinite alternate;animation-delay:0s}
+.bouncing-ball{width:48px;height:48px;border-radius:50%;background:#ff7a59;animation:bounce 1.2s cubic-bezier(.17,.67,.35,1.02) infinite;animation-delay:.15s}
+.color-text{font-size:20px;animation:colorCycle 4s ease-in-out infinite;animation-direction:alternate;animation-iteration-count:infinite}
+
+
+@keyframes slideX{
+from{transform:translateX(-36px)}
+to{transform:translateX(36px)}
+}
+
+
+@keyframes bounce{
+0%{transform:translateY(0);}
+40%{transform:translateY(-68px);}
+60%{transform:translateY(-36px);}
+100%{transform:translateY(0);}
+}
+
+
+@keyframes colorCycle{
+0%{color:#0b1220}
+33%{color:#1366ff}
+66%{color:#ff7a59}
+100%{color:#20c997}
+}

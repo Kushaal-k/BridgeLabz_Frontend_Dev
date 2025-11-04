@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-family: Inter, Segoe UI, Roboto
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px;
+    background: linear-gradient(135deg, #f0f6ff 0%, #ffffff 100%)
+}
+
+.card {
+    width: min(760px, 94vw);
+    padding: 24px;
+    border-radius: 12px;
+    background: linear-gradient(180deg, #fff, #f8fbff);
+    box-shadow: 0 10px 30px rgba(10, 20, 40, .06)
+}
+
+.controls {
+    display: flex;
+    gap: 12px;
+    align-items: center
+}
+
+.search input {
+    padding: 10px 14px;
+    border-radius: 10px;
+    border: 1px solid #e6eefc;
+    min-width: 220px
+}
+
+.search input:focus {
+    outline: none;
+    box-shadow: 0 6px 18px rgba(19, 102, 255, .12);
+    border-color: rgba(19, 102, 255, .25)
+}
+
+.select {
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 1px solid #e6eefc
+}
+
+.select:focus {
+    box-shadow: 0 8px 26px rgba(19, 102, 255, .08)
+}
+
+.actions {
+    display: flex;
+    gap: 8px;
+    margin-left: auto
+}
+
+.btn {
+    padding: 10px 14px;
+    border-radius: 10px;
+    border: none;
+    background: #f5f7fa;
+    cursor: pointer
+}
+
+.btn.primary {
+    background: #1366ff;
+    color: #fff
+}
+
+.btn:hover {
+    transform: translateY(-2px)
+}

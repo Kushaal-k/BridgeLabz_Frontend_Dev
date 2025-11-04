@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>1 — Pseudo-Classes Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Pseudo-Classes: :hover, :focus, :active, :nth-child()</h1>
+    </header>
+    <main>
+        <section class="examples">
+            <article class="example">
+                <h2>Link States</h2>
+                <p><a href="#" class="demo-link">Hover / Focus / Active Link</a></p>
+                <p class="explain"><strong>:hover</strong> — when the pointer is over the element.
+                    <strong>:focus</strong> — when element receives keyboard focus. <strong>:active</strong> — while
+                    mouse/keyboard activates it.</p>
+            </article>
+
+
+            <article class="example">
+                <h2>Buttons</h2>
+                <p><button class="btn">Primary Button</button> <button class="btn" disabled>Disabled</button></p>
+                <p class="explain">Buttons show :hover and :active styles; :focus is visible for keyboard users.</p>
+            </article>
+
+
+            <article class="example">
+                <h2>List with :nth-child()</h2>
+                <ul class="demo-list">
+                    <li>Item One</li>
+                    <li>Item Two</li>
+                    <li>Item Three</li>
+                    <li>Item Four</li>
+                </ul>
+                <p class="explain"><strong>:nth-child()</strong> targets items by position — here odd/even styles.</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Class exercise — Pseudo-classes</p>
+    </footer>
+</body>
+
+</html>
