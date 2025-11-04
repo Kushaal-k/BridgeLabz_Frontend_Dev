@@ -1,0 +1,66 @@
+body {
+justify-content: center;
+align-items: center;
+background: #f5f7fa;
+font-family: Arial, sans-serif;
+}
+
+
+.container {
+display: flex;
+gap: 40px;
+justify-content: center;
+align-items: center;
+}
+
+
+.box {
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+}
+
+
+.shape {
+width: 100px;
+height: 100px;
+background: #007acc;
+border-radius: 12px;
+transition: all 0.4s ease;
+}
+
+
+/* Rotate Transformation */
+.rotate .shape:hover {
+transform: rotate(45deg);
+background: #005f99;
+}
+
+
+/* Scale Transformation */
+.scale .shape:hover {
+transform: scale(1.3);
+background: #00b894;
+}
+
+
+/* Translate Transformation */
+.translate .shape:hover {
+transform: translateY(-20px);
+background: #e17055;
+}
+
+
+/* Skew Transformation */
+.skew .shape:hover {
+transform: skew(20deg, 10deg);
+background: #6c5ce7;
+}
+
+
+p {
+margin-top: 12px;
+font-weight: bold;
+color: #333;
+}

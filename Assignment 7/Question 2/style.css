@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eef2ff
+}
+
+.wrap {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 80vh
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 8px
+}
+
+/* Box A fixed px */
+.box.a {
+    width: 300px;
+    height: 200px;
+    background: #ef4444
+}
+
+/* Box B percent + vh */
+.box.b {
+    width: 50%;
+    height: 30vh;
+    background: #f59e0b;
+    min-width: 180px
+}
+
+/* Box C em-based height, with min-height and max-width and overflow */
+.box.c {
+    height: 4em;
+    line-height: 1.2em;
+    padding: 1rem;
+    background: #10b981;
+    max-width: 220px;
+    min-height: 3em;
+    overflow: auto
+}
+
+
+/* Demonstrate overflow: add many words which will wrap/overflow if needed */
+.box.c::after {
+    content: ' — This box demonstrates min-height, max-width and overflow behavior when content grows.'
+}
+
+
+/* Centering already handled by body/flexbox */

@@ -1,0 +1,107 @@
+:root {
+    --bg: #f6f7fb;
+    --card: #ffffff;
+    --accent: #2563eb
+}
+
+/* Basic page layout */
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: system-ui, Segoe UI, Arial;
+    background: var(--bg);
+    color: #111;
+    margin: 0;
+    padding: 2rem
+}
+
+header,
+h1 {
+    margin: 0 0 1rem
+}
+
+.container {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    flex-wrap: wrap
+}
+
+.box {
+    background: var(--card);
+    padding: 0.6rem;
+    border-radius: 6px;
+    min-width: 160px;
+    text-align: center;
+    transition: border-color 0.25s, transform 0.25s
+}
+
+.box span {
+    display: block;
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 0.5rem
+}
+
+
+/* Different border styles */
+.border-solid {
+    border: 4px solid #0f172a
+}
+
+.border-dashed {
+    border: 4px dashed #0f766e
+}
+
+.border-double {
+    border: 6px double #7c2d12
+}
+
+.border-groove {
+    border: 6px groove #6b21a8
+}
+
+
+/* Rounded corners and padding examples */
+.rounded {
+    border-radius: 18px
+}
+
+.largepad {
+    padding: 2rem
+}
+
+
+/* Hover effect changes border color smoothly */
+.box:hover {
+    border-color: var(--accent);
+    transform: translateY(-4px)
+}
+
+
+/* Assign classes on the HTML accordingly */
+/* Note: In the HTML we used class="box solid" etc — mapping below via additional selectors */
+.box.solid {
+    border-style: solid
+}
+
+.box.dashed {
+    border-style: dashed
+}
+
+.box.double {
+    border-style: double
+}
+
+.box.groove {
+    border-style: groove
+}
+
+
+/* Accessibility: focusable when navigated via keyboard */
+.box:focus {
+    outline: 3px dashed #c7d2fe;
+    outline-offset: 4px
+}

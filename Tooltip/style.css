@@ -1,0 +1,70 @@
+.heading {
+  text-align: center;
+  font-size: 70px;
+}
+.main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.container {
+  display: flex;
+  gap: 120px;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+.cockroaches {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+.c1,
+.c2,
+.c3 {
+  height: 200px;
+  width: 200px;
+  box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  transition: all 3s ease;
+}
+.o1 {
+  height: 200px;
+  width: 200px;
+  box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  transition: all 3s ease;
+}
+.container:hover .o1 {
+  transition-duration: 3s;
+  transform: translate(-300px);
+}
+.container:hover .c1 {
+  transition-duration: 3s;
+  transform: translateY(-600px);
+}
+.container:hover .c2 {
+  transition-duration: 3s;
+  transform: translateX(-1000px);
+}
+.container:hover .c3 {
+  transition-duration: 3s;
+  transform: translateY(600px);
+}
+img {
+  height: 200px;
+  width: 200px;
+}
+.tooltip {
+  position: relative;
+}
+.tooltip .tooltiptext {
+  position: absolute;
+  visibility: hidden;
+  bottom: 125%;
+  left: 2px
+}
+.tooltip button:hover + .tooltiptext {
+  visibility: visible;
+}

@@ -1,0 +1,67 @@
+/* Attribute selectors: select input[type="text"] */
+input[type="text"] {
+    border: 2px solid #cbd5e1;
+    padding: 0.4rem;
+    border-radius: 6px
+}
+
+/* href^="https" selects links that start with https */
+a[href^="https"] {
+    font-weight: 700;
+    text-decoration: none
+}
+
+
+/* Pseudo-classes */
+a[href^="https"]:hover {
+    text-decoration: underline
+}
+
+input[type="text"]:focus {
+    outline: 3px solid rgba(99, 102, 241, 0.25);
+    outline-offset: 3px
+}
+
+
+/* nth-child */
+.items li:nth-child(odd) {
+    background: #eef2ff
+}
+
+.items li:nth-child(even) {
+    background: #fff
+}
+
+
+/* Pseudo-elements */
+.items li::before {
+    content: "• ";
+    color: #2563eb;
+    font-weight: 700
+}
+
+
+/* Combinators examples */
+/* child combinator: only direct children (ul > li) */
+.links>li {
+    margin-bottom: 0.5rem
+}
+
+/* adjacent sibling: select an li immediately after another */
+.items li+li {
+    padding-left: 0.5rem
+}
+
+/* general sibling: style all later siblings after the first */
+.items li:first-child~li {
+    font-style: italic
+}
+
+
+/* descendant combinator */
+.links a {
+    color: #064e3b
+}
+
+
+/* Comments above explain each selector type */
