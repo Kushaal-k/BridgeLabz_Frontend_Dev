@@ -1,0 +1,107 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and Layout */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333;
+}
+
+/* Contact Form Container */
+.contact-container {
+  background-color: #ffffff;
+  padding: 2em 3em;
+  border-radius: 12px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 450px;
+  text-align: center;
+}
+
+.contact-container h1 {
+  color: #003366;
+  font-size: 1.8rem;
+  margin-bottom: 0.5em;
+}
+
+.contact-container p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 1.5em;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.form-group {
+  text-align: left;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.3em;
+  color: #003366;
+}
+
+/* Input and Textarea Styles */
+input,
+textarea {
+  width: 100%;
+  padding: 0.8em;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Focus Effect */
+input:focus,
+textarea:focus {
+  border-color: #003366;
+  outline: none;
+  box-shadow: 0 0 6px rgba(0, 51, 102, 0.2);
+}
+
+/* Button */
+button {
+  background-color: #003366;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.9em;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #0055a5;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .contact-container {
+    padding: 1.5em;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+}

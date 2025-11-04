@@ -1,0 +1,110 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #0a192f;
+  color: #ccd6f6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #112240;
+  color: #64ffda;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 3%;
+  z-index: 1000;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2em;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ccd6f6;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #64ffda;
+}
+
+/* Main Section */
+main {
+  flex: 1;
+  margin-top: 80px; /* offset for fixed header */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5vh 10%;
+}
+
+.intro {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2em;
+  max-width: 900px;
+}
+
+.profile-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 4px solid #64ffda;
+}
+
+.bio h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+}
+
+.bio p {
+  font-size: 1.1em;
+  line-height: 1.6em;
+  max-width: 500px;
+}
+
+/* Footer */
+footer {
+  background-color: #112240;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 0.9rem;
+  color: #8892b0;
+  margin-top: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .intro {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .bio p {
+    font-size: 1rem;
+  }
+}
