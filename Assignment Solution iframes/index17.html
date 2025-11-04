@@ -1,0 +1,37 @@
+<!-- 17. Create two HTML files:
+● form.html → Contains a form with a text input and a submit button.
+● result.html → Displays a message “Form successfully submitted.”
+Use an <iframe> in form.html to load result.html after clicking Submit. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Submission Example</title>
+</head>
+<body>
+  <h2>Form with iframe Result</h2>
+
+  <form action="result.html" target="resultFrame">
+    <label for="name">Enter Name:</label>
+    <input type="text" id="name" name="name" required>
+    <input type="submit" value="Submit">
+  </form>
+
+  <br>
+
+  <iframe name="resultFrame" width="100%" height="100" title="Form Result"></iframe>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Result</title>
+</head>
+<body>
+  <h3>Form successfully submitted.</h3>
+</body>
+</html>

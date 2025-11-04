@@ -1,0 +1,22 @@
+<!-- 8. Design a Feedback Form that includes:
+● A textarea for feedback
+● Radio buttons for rating (Good, Average, Poor)
+● A submit button
+Use method="post" and action="#". -->
+
+<!-- q8.html -->
+<!DOCTYPE html>
+<html>
+<head><title>Feedback</title></head>
+<body>
+  <h2>Feedback Form</h2>
+  <form method="post" action="#">
+    <textarea name="feedback" rows="4" cols="40" required></textarea><br><br>
+    Rating: 
+    <input type="radio" name="rate" value="Good"> Good
+    <input type="radio" name="rate" value="Average"> Average
+    <input type="radio" name="rate" value="Poor"> Poor<br><br>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
