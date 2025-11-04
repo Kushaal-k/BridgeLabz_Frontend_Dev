@@ -1,0 +1,56 @@
+<!-- 14. Create a Movie Database Page using a <table>:
+● Columns: Movie Name, Genre, Year, IMDB Rating, and Link.
+● Include attributes like border, title, and colspan.
+● Add a caption at the top and a note at the bottom using <small>. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Movie Database</title>
+</head>
+<body>
+  <header>
+    <h1>Movie Database</h1>
+  </header>
+
+  <main>
+    <table border="1" title="Movies table">
+      <caption>Top Movies</caption>
+      <thead>
+        <tr>
+          <th>Movie Name</th>
+          <th>Genre</th>
+          <th>Year</th>
+          <th>IMDB Rating</th>
+          <th>Link</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>The Great Escape</td>
+          <td>Adventure</td>
+          <td>1963</td>
+          <td>8.2</td>
+          <td><a href="https://example.com/the-great-escape" title="More info">Details</a></td>
+        </tr>
+        <tr>
+          <td>Inception</td>
+          <td>Sci-Fi</td>
+          <td>2010</td>
+          <td>8.8</td>
+          <td><a href="https://example.com/inception" title="More info">Details</a></td>
+        </tr>
+        <tr>
+          <td colspan="2" title="Note">Note:</td>
+          <td colspan="3"><small>Ratings are illustrative and for assignment only.</small></td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 MovieDB</p>
+  </footer>
+</body>
+</html>

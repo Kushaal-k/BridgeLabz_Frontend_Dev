@@ -1,0 +1,65 @@
+<!-- 11. Design a News Layout Page:
+● <header> → Site name
+● <nav> → News Categories (Sports, Technology, Politics)
+● <main> → 3 <article>s each with headline, date (<time>), short content, and a
+source link.
+● <aside> → Popular Topics list
+● <footer> → Contact & rights info. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>News Site</title>
+</head>
+<body>
+  <header>
+    <h1>Daily Digest</h1>
+  </header>
+
+  <nav>
+    <a href="#sports">Sports</a> |
+    <a href="#tech">Technology</a> |
+    <a href="#politics">Politics</a>
+  </nav>
+
+  <main>
+    <!-- Article 1 -->
+    <article id="sports">
+      <h2>Local Team Wins Championship</h2>
+      <time datetime="2025-10-10">October 10, 2025</time>
+      <p>The local team secured the title after a thrilling final match that went into extra time.</p>
+      <p>Source: <a href="https://example.com/sports" title="Sports source">Sports Daily</a></p>
+    </article>
+
+    <!-- Article 2 -->
+    <article id="tech">
+      <h2>New Open-Source Tool Released</h2>
+      <time datetime="2025-10-09">October 9, 2025</time>
+      <p>A community-driven tool aims to simplify developer workflows and automation.</p>
+      <p>Source: <a href="https://example.com/tech" title="Tech source">Tech Portal</a></p>
+    </article>
+
+    <!-- Article 3 -->
+    <article id="politics">
+      <h2>Policy Update Announced</h2>
+      <time datetime="2025-10-08">October 8, 2025</time>
+      <p>The government announced updates to digital infrastructure funding for small cities.</p>
+      <p>Source: <a href="https://example.com/politics" title="Politics source">National News</a></p>
+    </article>
+  </main>
+
+  <aside>
+    <h3>Popular Topics</h3>
+    <ul>
+      <li>Election 2025</li>
+      <li>AI & Society</li>
+      <li>Olympics Highlights</li>
+    </ul>
+  </aside>
+
+  <footer>
+    <p>Contact: editor@dailydigest.example | &copy; 2025 Daily Digest</p>
+  </footer>
+</body>
+</html>

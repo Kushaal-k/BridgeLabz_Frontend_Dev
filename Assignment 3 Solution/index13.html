@@ -1,0 +1,55 @@
+<!-- 13. Build a Blog Layout Page using HTML5 semantic structure:
+● <header> → Blog name
+● <nav> → Menu (Home, Blogs, About)
+● <main> →
+○ <article> 1: “My First Blog”
+
+○ <article> 2: “Things I Learned This Week”
+● Each article should have its own heading, paragraph, <time> tag, and <blockquote>
+inside.
+● <footer> → “Written by [Your Name]”. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>My Blog</title>
+</head>
+<body>
+  <header>
+    <h1>Ayush's Blog</h1>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a> |
+    <a href="#blogs">Blogs</a> |
+    <a href="#about">About</a>
+  </nav>
+
+  <main>
+    <!-- Article 1 -->
+    <article>
+      <h2>My First Blog</h2>
+      <time datetime="2025-09-01">September 1, 2025</time>
+      <p>Today I launched my first blog — excited to share learning and projects.</p>
+      <blockquote>
+        "Start small, think big, act now."
+      </blockquote>
+    </article>
+
+    <!-- Article 2 -->
+    <article>
+      <h2>Things I Learned This Week</h2>
+      <time datetime="2025-09-07">September 7, 2025</time>
+      <p>This week I learned about HTTP caching, semantic HTML and accessibility basics.</p>
+      <blockquote>
+        "Small improvements compound over time."
+      </blockquote>
+    </article>
+  </main>
+
+  <footer>
+    <p>Written by Ayush Sahu</p>
+  </footer>
+</body>
+</html>

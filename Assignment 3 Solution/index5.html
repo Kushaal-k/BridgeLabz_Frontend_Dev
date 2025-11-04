@@ -1,0 +1,74 @@
+<!-- 5. Create a Nested List Structure representing a “University → Departments → Courses →
+Topics” hierarchy.
+Use nested <ul> and <ol> lists properly to show multi-level structure. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>University Departments & Courses</title>
+</head>
+<body>
+  <header>
+    <h1>Example University</h1>
+  </header>
+
+  <main>
+    <h2>University → Departments → Courses → Topics</h2>
+
+    <!-- Nested list structure -->
+    <ul>
+      <li>Faculty of Science
+        <ol>
+          <li>Department of Computer Science
+            <ul>
+              <li>B.Sc. Computer Science
+                <ol>
+                  <li>Programming Fundamentals</li>
+                  <li>Data Structures</li>
+                  <li>Database Systems</li>
+                </ol>
+              </li>
+              <li>M.Sc. Computer Science
+                <ol>
+                  <li>Advanced Algorithms</li>
+                  <li>Machine Learning</li>
+                </ol>
+              </li>
+            </ul>
+          </li>
+          <li>Department of Mathematics
+            <ul>
+              <li>B.Sc. Mathematics
+                <ol>
+                  <li>Calculus</li>
+                  <li>Linear Algebra</li>
+                </ol>
+              </li>
+            </ul>
+          </li>
+        </ol>
+      </li>
+
+      <li>Faculty of Arts
+        <ol>
+          <li>Department of English
+            <ul>
+              <li>BA English
+                <ol>
+                  <li>Literary Studies</li>
+                  <li>Creative Writing</li>
+                </ol>
+              </li>
+            </ul>
+          </li>
+        </ol>
+      </li>
+    </ul>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Example University</p>
+  </footer>
+</body>
+</html>

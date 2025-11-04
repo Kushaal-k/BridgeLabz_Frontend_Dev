@@ -1,0 +1,60 @@
+<!-- 4. Create a Company Layout Page using only block-level elements:
+● <header> → Company name
+● <nav> → Navigation links
+● <main> → Two <section>s:
+○ About the company
+○ Services offered (list)
+● <aside> → Display a blockquote from the company’s CEO.
+● <footer> → Contact email and address. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Company Layout</title>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>TechNova Solutions</h1>
+  </header>
+
+  <!-- Navigation (block-level) -->
+  <nav>
+    <a href="#about">About</a> |
+    <a href="#services">Services</a> |
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <!-- About section -->
+    <section id="about">
+      <h2>About the Company</h2>
+      <p>TechNova Solutions provides end-to-end software services focusing on cloud-native applications and UX-driven design.</p>
+    </section>
+
+    <!-- Services section -->
+    <section id="services">
+      <h2>Services Offered</h2>
+      <ul>
+        <li>Custom Software Development</li>
+        <li>Cloud Migration</li>
+        <li>UX & UI Design</li>
+        <li>Maintenance & Support</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Aside with CEO quote -->
+  <aside>
+    <blockquote>
+      "Innovation is the lifeblood of our company — we build with purpose and empathy."
+      <footer>— <cite>CEO, TechNova Solutions</cite></footer>
+    </blockquote>
+  </aside>
+
+  <footer id="contact">
+    <p>Contact: hr@technova.example | 123 Tech Park, City</p>
+  </footer>
+</body>
+</html>

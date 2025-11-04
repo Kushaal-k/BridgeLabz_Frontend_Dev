@@ -1,0 +1,83 @@
+<!-- 3. Create a Course Registration Form structure using HTML only.
+It should include:
+● <fieldset> and <legend> for grouping fields.
+● A <select> dropdown for selecting a course.
+● <input> fields for name and email.
+● A <table> at the bottom showing available course schedules (Day, Time, Instructor). -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Course Registration Form</title>
+</head>
+<body>
+  <header>
+    <h1>Course Registration</h1>
+  </header>
+
+  <!-- Form structure (HTML only) -->
+  <main>
+    <!-- Grouped fields with fieldset and legend -->
+    <form action="#" method="post" title="Course registration form (static)">
+      <fieldset>
+        <legend>Student Details</legend>
+        <label for="name">Full Name:</label><br />
+        <input type="text" id="name" name="name" required placeholder="Enter full name"><br /><br />
+
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" required placeholder="you@example.com"><br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Course Selection</legend>
+        <label for="course">Choose a course:</label><br />
+        <select id="course" name="course" title="Select course">
+          <option value="web" selected>Web Development</option>
+          <option value="data">Data Science</option>
+          <option value="ml">Machine Learning</option>
+          <option value="cloud">Cloud Computing</option>
+        </select>
+      </fieldset>
+
+      <!-- Submit is included though action is placeholder -->
+      <p>
+        <input type="submit" value="Register">
+      </p>
+    </form>
+
+    <!-- Table showing available course schedules -->
+    <h2>Available Course Schedules</h2>
+    <table border="1" title="Course schedule table">
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Time</th>
+          <th>Instructor</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Monday</td>
+          <td>6:00 PM - 8:00 PM</td>
+          <td>Prof. Sharma</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>6:00 PM - 8:00 PM</td>
+          <td>Ms. Rao</td>
+        </tr>
+        <tr>
+          <td>Saturday</td>
+          <td>10:00 AM - 1:00 PM</td>
+          <td>Mr. Gupta</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+
+  <footer>
+    <p>Contact: admissions@example.edu</p>
+  </footer>
+</body>
+</html>

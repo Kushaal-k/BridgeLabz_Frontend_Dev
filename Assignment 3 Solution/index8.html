@@ -1,0 +1,68 @@
+<!-- 8. Create a Student Report Page:
+● <h1> for school name.
+● <table> for marks of 5 subjects.
+● Add a row that shows Total and Percentage (no calculation needed, just text).
+● Use attributes like rowspan, colspan, and title to improve clarity. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Student Report</title>
+</head>
+<body>
+  <h1>St. Mary's High School</h1>
+
+  <!-- Marks table for 5 subjects -->
+  <table border="1" title="Marks obtained">
+    <caption>Term Report</caption>
+    <thead>
+      <tr>
+        <th>Subject</th>
+        <th>Marks Obtained</th>
+        <th>Max Marks</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Mathematics</td>
+        <td>88</td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td>Physics</td>
+        <td>82</td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td>Chemistry</td>
+        <td>79</td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td>English</td>
+        <td>91</td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td>Computer Science</td>
+        <td>95</td>
+        <td>100</td>
+      </tr>
+      <!-- Total and Percentage row using colspan to label -->
+      <tr>
+        <td colspan="1" title="Total marks">Total</td>
+        <td colspan="1">435</td>
+        <td colspan="1">500</td>
+      </tr>
+      <tr>
+        <td colspan="3" title="Percentage shown as text">Percentage: 87%</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <footer>
+    <p>Report prepared by: Class Teacher</p>
+  </footer>
+</body>
+</html>

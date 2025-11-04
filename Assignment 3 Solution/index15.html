@@ -1,0 +1,67 @@
+<!-- 15. Build a Portfolio Layout Page using HTML only:
+● <header> → Your name and role
+● <nav> → Navigation links
+● <main> →
+○ <section> “About Me” (paragraph + quote)
+○ <section> “Skills” (unordered list)
+○ <section> “Projects” (ordered list or table)
+● <aside> → Contact Info (email, phone, LinkedIn link)
+● <footer> → Closing copyright line -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Portfolio - Ayush Sahu</title>
+</head>
+<body>
+  <header>
+    <h1>Ayush Sahu</h1>
+    <p>Web Developer</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a> |
+    <a href="#skills">Skills</a> |
+    <a href="#projects">Projects</a>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I'm a web developer focusing on front-end and full-stack JavaScript solutions.</p>
+      <blockquote>"Code is poetry; make it readable."</blockquote>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML &amp; Semantic Markup</li>
+        <li>JavaScript (ES6+)</li>
+        <li>Node.js & Express</li>
+        <li>Databases: MongoDB</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <ol>
+        <li>SkillVerse — Learning platform (backend & frontend)</li>
+        <li>Personal Portfolio — Static site for showcasing work</li>
+        <li>Product Catalog App — Static product pages and tables</li>
+      </ol>
+    </section>
+  </main>
+
+  <aside>
+    <h3>Contact Info</h3>
+    <p>Email: ayush@example.com</p>
+    <p>Phone: +91-1234567890</p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/ayush" title="LinkedIn profile">linkedin.com/in/ayush</a></p>
+  </aside>
+
+  <footer>
+    <p>&copy; 2025 Ayush Sahu</p>
+  </footer>
+</body>
+</html>

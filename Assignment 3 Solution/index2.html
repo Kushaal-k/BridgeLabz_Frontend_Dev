@@ -1,0 +1,65 @@
+<!-- 2. Build a Product Catalog page for an online store using only HTML:
+● Use a <table> to list products with columns → Product Name, Description, Price, and
+Availability.
+● Add one image per product using <img> inside a cell.
+● Use attributes like colspan and rowspan where necessary. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Product Catalog</title>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Online Store - Product Catalog</h1>
+  </header>
+
+  <!-- Table of products -->
+  <main>
+    <table border="1" title="Product listing table">
+      <caption>Available Products</caption>
+      <thead>
+        <tr>
+          <th>Product Name</th>
+          <th>Description</th>
+          <th>Price</th>
+          <th>Availability</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="2">Wireless Headphones</td>
+          <td>Over-ear, noise cancelling<br /><img src="headphones.jpg" alt="Wireless Headphones" width="120" /></td>
+          <td>₹2,999</td>
+          <td>In Stock</td>
+        </tr>
+        <tr>
+          <!-- Using rowspan: product name spans two variations -->
+          <td colspan="2">Color: Black / Blue</td>
+          <td>Limited Stock</td>
+        </tr>
+
+        <tr>
+          <td>Smart Watch</td>
+          <td>Fitness tracker, notifications<br /><img src="watch.jpg" alt="Smart Watch" width="120" /></td>
+          <td>₹4,499</td>
+          <td>Preorder</td>
+        </tr>
+
+        <tr>
+          <td>Portable Speaker</td>
+          <td>Waterproof, 10-hour battery<br /><img src="speaker.jpg" alt="Portable Speaker" width="120" /></td>
+          <td>₹1,199</td>
+          <td>In Stock</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Online Store</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!-- 7. Design a Conference Schedule page using HTML tables and semantic tags.
+The table should have:
+● Sessions (Morning, Afternoon, Evening)
+● Columns for Time, Topic, Speaker
+● Use <thead>, <tbody>, and <tfoot> for structure. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Conference Schedule</title>
+</head>
+<body>
+  <header>
+    <h1>Annual Tech Conference 2025</h1>
+  </header>
+
+  <main>
+    <h2>Schedule</h2>
+    <table border="1" title="Conference schedule">
+      <thead>
+        <tr>
+          <th>Session</th>
+          <th>Time</th>
+          <th>Topic</th>
+          <th>Speaker</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Morning</td>
+          <td><time datetime="2025-11-10T09:00">09:00 - 11:00</time></td>
+          <td>Keynote: Future of Web</td>
+          <td>Dr. Neha Singh</td>
+        </tr>
+        <tr>
+          <td>Afternoon</td>
+          <td><time datetime="2025-11-10T13:00">13:00 - 15:00</time></td>
+          <td>Building Scalable APIs</td>
+          <td>Mr. Arjun Patel</td>
+        </tr>
+        <tr>
+          <td>Evening</td>
+          <td><time datetime="2025-11-10T17:00">17:00 - 19:00</time></td>
+          <td>Panel: AI Ethics</td>
+          <td>Panelists</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="4">Venue: Convention Center, Hall A</td>
+        </tr>
+      </tfoot>
+    </table>
+  </main>
+
+  <footer>
+    <p>For inquiries: conference@example.org</p>
+  </footer>
+</body>
+</html>
