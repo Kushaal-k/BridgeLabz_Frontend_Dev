@@ -1,7 +1,5 @@
 # Web Development Learning Journal
 
-Daily notes from my web development learning journey (HTML → CSS).
-
 ---
 
 ## Day 1 — 09/10/2025 — Introduction to Web Development & HTML Basics
