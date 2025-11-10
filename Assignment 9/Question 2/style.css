@@ -1,0 +1,87 @@
+/* Responsive Web Design Layout */
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    gap: 1rem;
+    background: #f4f6f8;
+    color: #0b0b0b;
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    background: white;
+    width: 100%;
+    box-shadow: 0 4px 14px rgba(12, 12, 14, 0.06);
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.main-nav a {
+    margin-left: 1rem;
+    text-decoration: none;
+    color: #0b0b0b;
+    font-weight: 600;
+}
+
+.main-nav a:focus,
+.main-nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main features layout: horizontal 3 boxes */
+.features {
+    display: flex;
+    gap: 1rem;
+    padding: 1.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: stretch;
+}
+
+.feature {
+    background: white;
+    flex: 1;
+    padding: 1.25rem;
+    border-radius: 8px;
+    box-shadow: 0 8px 18px rgba(12, 12, 14, 0.05);
+    transition: transform 0.25s ease;
+}
+
+.feature:hover {
+    transform: scale(1.03);
+}
+
+/* Footer centered */
+.site-footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 1rem;
+    background: transparent;
+    color: #444;
+}
+
+/* Below 750px: stack feature boxes vertically */
+@media (max-width:750px) {
+    .features {
+        flex-direction: column;
+    }
+
+    .main-nav {
+        display: flex;
+        gap: 0.5rem;
+    }
+}

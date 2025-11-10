@@ -1,0 +1,62 @@
+/* Responsive Design Principles Summary */
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+    background: #fff;
+    color: #111;
+    padding: 2rem;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1rem
+}
+
+/* Grid: three boxes */
+.principles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+/* Boxes with hover gradient */
+.principle {
+    background: #f6f8ff;
+    padding: 1rem;
+    border-radius: 8px;
+    transition: background 0.25s ease, color 0.25s ease, transform 0.18s ease;
+}
+
+.principle h2 {
+    margin: 0 0 0.5rem 0;
+}
+
+.principle pre {
+    margin: 0;
+    background: transparent;
+    padding: 0;
+    color: #333;
+}
+
+/* Hover gradient and text color change */
+.principle:hover {
+    background: linear-gradient(135deg, #1e90ff 0%, #7bc8ff 100%);
+    color: white;
+    transform: translateY(-6px);
+}
+
+/* Below 600px: single column */
+@media (max-width:600px) {
+    .principles {
+        grid-template-columns: 1fr;
+    }
+}

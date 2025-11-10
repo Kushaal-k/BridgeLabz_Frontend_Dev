@@ -1,0 +1,93 @@
+/* Responsive Dashboard Summary */
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+    background: #f5f7fb;
+    color: #111;
+}
+
+/* Grid layout: header, sidebar, main */
+.dashboard {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+        "header header"
+        "sidebar main";
+    gap: 1rem;
+    min-height: 100vh;
+}
+
+/* Header spans top */
+.dash-header {
+    grid-area: header;
+    background: white;
+    padding: 1rem;
+    box-shadow: 0 4px 14px rgba(12, 12, 14, 0.06);
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background: white;
+    padding: 1rem;
+    box-shadow: 0 8px 20px rgba(12, 12, 14, 0.04);
+}
+
+.main-content {
+    grid-area: main;
+    padding: 1rem;
+}
+
+/* Cards grid inside main content */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+/* Card style */
+.card {
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(12, 12, 14, 0.04);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    animation: loadIn 0.5s ease both;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 24px 48px rgba(12, 12, 14, 0.09);
+}
+
+/* load animation */
+@keyframes loadIn {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+/* Responsive: below 750px, sidebar shifts to top and content stacks */
+@media (max-width:750px) {
+    .dashboard {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "sidebar"
+            "main";
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
