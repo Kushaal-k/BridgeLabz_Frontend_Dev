@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Today's Menu — The Spice Table</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="py-3 bg-dark text-white">
+    <div class="container text-center">
+      <h2 class="mb-0">The Spice Table</h2>
+    </div>
+  </header>
+
+  <main class="py-5">
+    <div class="container">
+      <section class="mb-4 text-center">
+        <h3 class="lead">Today's Menu</h3>
+        <p class="text-muted">Freshly prepared by our chef — seasonal and tasty.</p>
+      </section>
+
+      <section class="row">
+        <div class="col-lg-8">
+          <!-- Bootstrap table for menu items -->
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Dish</th>
+                <th>Category</th>
+                <th class="text-end">Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Masala Dosa</td>
+                <td>South Indian</td>
+                <td class="text-end">₹150</td>
+              </tr>
+              <tr>
+                <td>Paneer Butter Masala</td>
+                <td>North Indian</td>
+                <td class="text-end">₹220</td>
+              </tr>
+              <tr>
+                <td>Seafood Curry</td>
+                <td>Seafood</td>
+                <td class="text-end">₹380</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <aside class="col-lg-4">
+          <!-- Chef's Specials using list-group -->
+          <div class="mb-4">
+            <h5>Chef's Specials</h5>
+            <ul class="list-group">
+              <li class="list-group-item">Truffle Fries</li>
+              <li class="list-group-item">Duck Confit</li>
+              <li class="list-group-item">Molten Chocolate Cake</li>
+            </ul>
+          </div>
+
+          <figure class="figure">
+            <img src="https://via.placeholder.com/350x220" class="figure-img img-fluid rounded" alt="Dish">
+            <figcaption class="figure-caption text-center">Chef's recommendation — try with wine pairing.</figcaption>
+          </figure>
+        </aside>
+      </section>
+    </div>
+  </main>
+
+  <footer class="py-4 text-center bg-light">
+    <div class="container">
+      <small>Open daily • Contact: +91 98765 43210</small>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

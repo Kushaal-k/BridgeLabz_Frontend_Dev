@@ -1,0 +1,7 @@
+.hero {
+    background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+}
+
+.navbar-brand {
+    letter-spacing: 0.6px;
+}
