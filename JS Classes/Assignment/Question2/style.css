@@ -1,0 +1,7 @@
+#password:invalid{
+    border: 1px solid red;
+}
+
+#email:invalid{
+    border: 1px solid red;
+}
