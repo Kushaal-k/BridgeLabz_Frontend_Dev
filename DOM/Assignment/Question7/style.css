@@ -1,0 +1,16 @@
+#box {
+  width: 400px;
+  height: 400px;
+  border: 2px solid black;
+  position: relative;   /* important for placing dots inside */
+  margin-bottom: 10px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background: red;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%); /* center dot on click */
+}

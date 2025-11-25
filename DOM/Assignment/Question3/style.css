@@ -1,0 +1,12 @@
+.hidden {
+  display: none;
+}
+
+.step {
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 8px;
+  width: 250px;
+}

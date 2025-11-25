@@ -1,0 +1,23 @@
+/* Default */
+body {
+  font-family: Arial;
+  padding: 20px;
+}
+
+/* Light Theme */
+.light {
+  background-color: white;
+  color: black;
+}
+
+/* Dark Theme */
+.dark {
+  background-color: black;
+  color: white;
+}
+
+/* Blue Theme */
+.blue {
+  background-color: #007BFF;
+  color: white;
+}

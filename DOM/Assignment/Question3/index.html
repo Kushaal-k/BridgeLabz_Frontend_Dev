@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>3 Step Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Multi Step Form</h2>
+
+<div id="step1" class="step">
+  <input type="text" id="name" placeholder="Enter Name">
+</div>
+
+<div id="step2" class="step hidden">
+  <input type="email" id="email" placeholder="Enter Email">
+</div>
+
+<div id="step3" class="step hidden">
+  <input type="password" id="password" placeholder="Enter Password">
+</div>
+
+<div id="summary" class="hidden"></div>
+
+<button id="backBtn" disabled>Back</button>
+<button id="nextBtn">Next</button>
+
+<script src="script.js"></script>
+</body>
+</html>
