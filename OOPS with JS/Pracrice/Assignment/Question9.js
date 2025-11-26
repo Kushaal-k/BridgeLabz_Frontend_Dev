@@ -1,0 +1,36 @@
+const workoutData = [
+  { user: "A", steps: 8000, calories: 300 },
+  { user: "B", steps: 12000, calories: 500 },
+  { user: "C", steps: 4000, calories: 200 }
+];
+
+class FitnessAnalytics {
+  constructor(data) {
+    if (!data.length) {
+      throw new Error("Dataset is empty");
+    }
+    this.data = data;
+  }
+
+  getActiveUsers() {
+    return this.data.filter(u => u.steps > 7000);
+  }
+
+  getAverageCalories() {
+    const total = this.data.reduce((sum, u) => sum + u.calories, 0);
+    return total / this.data.length;
+  }
+
+  getUserSummary() {
+    return this.data.map(u => `${u.user} burned ${u.calories} calories`);
+  }
+}
+
+try {
+  const fa = new FitnessAnalytics(workoutData);
+  console.log(fa.getActiveUsers());
+  console.log(fa.getAverageCalories());
+  console.log(fa.getUserSummary());
+} catch (err) {
+  console.log("Error:", err.message);
+}
