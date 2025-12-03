@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FAQ Interaction</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+  <style>
+    .faq-item {
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin: 10px;
+      border-radius: 5px;
+    }
+
+    .question {
+      font-weight: bold;
+      cursor: pointer;
+      margin-bottom: 8px;
+    }
+
+    .answer {
+      display: none;
+      margin-bottom: 10px;
+    }
+
+    .highlight {
+      background: #fff8c4;
+    }
+
+    .hovered {
+      color: #0077cc;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="faq-item">
+    <div class="question">What is your return policy?</div>
+    <div class="answer">You can return any product within 30 days.</div>
+    <input type="text" class="answer-input" placeholder="Type your query...">
+  </div>
+
+  <div class="faq-item">
+    <div class="question">How long is the warranty?</div>
+    <div class="answer">All products come with a 1-year warranty.</div>
+    <input type="text" class="answer-input" placeholder="Type your query...">
+  </div>
+
+  <div class="faq-item">
+    <div class="question">Do you offer international shipping?</div>
+    <div class="answer">Yes, international shipping is available.</div>
+    <input type="text" class="answer-input" placeholder="Type your query...">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

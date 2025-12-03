@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Course Filter</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+  <style>
+    .course {
+      padding: 10px;
+      margin: 5px;
+      background: #f4f4f4;
+      border-radius: 5px;
+    }
+
+    .highlight {
+      background: yellow;
+      font-weight: bold;
+    }
+
+    #count {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>Search Courses</h2>
+
+  <input type="text" id="searchBox" placeholder="Type to search courses...">
+  <button id="clearBtn">Clear</button>
+
+  <div id="courseList">
+    <div class="course">Web Development</div>
+    <div class="course">Data Science</div>
+    <div class="course">Machine Learning</div>
+    <div class="course">Cyber Security</div>
+    <div class="course">Cloud Computing</div>
+    <div class="course">Mobile App Development</div>
+  </div>
+
+  <div id="count"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

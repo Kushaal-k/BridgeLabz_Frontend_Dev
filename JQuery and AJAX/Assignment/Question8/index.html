@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blog Admin Panel</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+  <style>
+    .post {
+      padding: 10px;
+      margin: 8px 0;
+      background: #f4f4f4;
+      border-radius: 5px;
+    }
+    .highlight {
+      background: #fff8a6;
+    }
+    .tag {
+      background: #d1e7ff;
+      padding: 2px 6px;
+      margin-right: 5px;
+      border-radius: 3px;
+      font-size: 12px;
+      display: inline-block;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>Blog Admin Panel</h2>
+
+  <button id="addPost">Add New Post</button>
+  <button id="prependPost">Prepend Featured Post</button>
+  <button id="removeLast">Remove Last Post</button>
+
+  <br><br>
+
+  <input id="tagInput" type="text" placeholder="Enter tag">
+  <button id="addTag">Add Tag to Each Post</button>
+
+  <br><br>
+
+  <input id="keyword" type="text" placeholder="Highlight posts with keyword">
+
+  <div id="postList">
+    <div class="post">Introduction to Web Development</div>
+    <div class="post">Advanced JavaScript Techniques</div>
+    <div class="post">Understanding Cyber Security</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

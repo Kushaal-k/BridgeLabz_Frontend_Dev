@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Company Directory</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+  <style>
+    .department {
+      border: 2px solid #444;
+      padding: 10px;
+      margin: 15px 0;
+    }
+
+    .manager {
+      font-weight: bold;
+      cursor: pointer;
+      margin: 5px 0;
+    }
+
+    .employee {
+      margin-left: 20px;
+      cursor: pointer;
+    }
+
+    .highlight {
+      background: #fff7b2;
+    }
+
+    .contact {
+      display: none;
+      font-size: 14px;
+      color: #555;
+      margin-left: 25px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="department" id="deptA">
+    <h2 class="dept-title">Department A</h2>
+
+    <div class="manager">Alice (Manager)</div>
+    <div class="employee">Bob <span class="contact"> - bob@email.com</span></div>
+    <div class="employee">Charlie <span class="contact"> - charlie@email.com</span></div>
+  </div>
+
+  <div class="department" id="deptB">
+    <h2 class="dept-title">Department B</h2>
+
+    <div class="manager">David (Manager)</div>
+    <div class="employee">Emma <span class="contact"> - emma@email.com</span></div>
+    <div class="employee">Frank <span class="contact"> - frank@email.com</span></div>
+  </div>
+
+  <button id="randomBtn">Highlight Random Employee’s Siblings</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

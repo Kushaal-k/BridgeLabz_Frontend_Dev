@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Multi-Version jQuery Dashboard</title>
+
+  <!-- jQuery Version 1 (for carousel + highlighting widgets) -->
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+  <!-- jQuery Version 2 (for modal + tooltips) -->
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+  <style>
+    .carousel-item { display: none; font-size: 20px; padding: 10px; }
+    .active-widget { background: yellow; padding: 5px; }
+    .widget { display: inline-block; margin: 10px; padding: 10px; border: 1px solid #ddd; }
+    .modal { display: none; position: fixed; top: 30%; left: 40%; background: white;
+             padding: 20px; border: 2px solid #555; }
+  </style>
+</head>
+
+<body>
+
+  <h2>Carousel</h2>
+  <div class="carousel-item">Slide 1</div>
+  <div class="carousel-item">Slide 2</div>
+  <div class="carousel-item">Slide 3</div>
+
+  <h2>Widgets</h2>
+  <div class="widget" id="widget1">Widget A</div>
+  <div class="widget" id="widget2">Widget B</div>
+
+  <h2>Notifications</h2>
+  <button id="notifyBtn">Show Notification</button>
+
+  <div id="modalBox" class="modal">
+    <p>You have a new message!</p>
+    <button id="closeModal">Close</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

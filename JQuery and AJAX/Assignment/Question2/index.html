@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Product Highlight</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+  <style>
+    .product {
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin: 10px;
+      width: 200px;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .highlight {
+      background: #ffeaa7;
+    }
+
+    .details {
+      display: none;
+      font-size: 14px;
+      margin-top: 10px;
+      color: #555;
+    }
+
+    .favorite {
+      font-size: 20px;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      cursor: pointer;
+    }
+
+    .favorite.selected {
+      color: red;
+    }
+
+    .product[data-discount="true"] {
+      border-color: green;
+      background: #e9ffe9;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="product" data-stock="10" data-discount="true">
+    <span class="favorite">★</span>
+    <h3>Wireless Headphones</h3>
+    <p>$59.99</p>
+    <div class="details">High bass, Bluetooth 5.0, 20hr battery</div>
+  </div>
+
+  <div class="product" data-stock="0">
+    <span class="favorite">★</span>
+    <h3>Smartwatch</h3>
+    <p>$99.99</p>
+    <div class="details">Heart-rate monitor, GPS tracking</div>
+  </div>
+
+  <div class="product" data-stock="3" data-discount="true">
+    <span class="favorite">★</span>
+    <h3>Gaming Mouse</h3>
+    <p>$29.99</p>
+    <div class="details">RGB lights, 6 programmable buttons</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

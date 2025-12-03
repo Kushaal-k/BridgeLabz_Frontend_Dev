@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Subscription Manager</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+  <style>
+    .topic {
+      padding: 10px;
+      margin: 5px;
+      background: #f2f2f2;
+      cursor: pointer;
+    }
+
+    .active {
+      background: #c5f7c7;
+    }
+
+    #message {
+      margin-top: 15px;
+      font-weight: bold;
+      color: green;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>Manage Your Subscriptions</h2>
+
+  <button id="subscribeBtn">Subscribe</button>
+  <button id="unsubscribeBtn">Unsubscribe</button>
+
+  <h3>Topics</h3>
+  <div id="topics">
+    <div class="topic">Technology</div>
+    <div class="topic">Sports</div>
+    <div class="topic">Health</div>
+  </div>
+
+  <input id="newTopicInput" type="text" placeholder="Add new topic">
+  <button id="addTopicBtn">Add Topic</button>
+
+  <button id="removeClickBtn">Disable Topic Click Events</button>
+
+  <div id="message"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
